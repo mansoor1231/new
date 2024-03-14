@@ -65,8 +65,8 @@ async def get_info():
     print("Soil Moisture:%fm~/m3" % soil)
     print("Humidity:%f%%" % humid)
     print("Temperature:%f°C" % temp)
-    return {"Date":date,"Time":time,"Device Name":device_name,
-            "Lght Intensity":light,"Soil Moisture":soil,"Humidity":humid,"Temperature":temp
+    return {"Date:":date,"Time:":time,"Device Name:":device_name,
+            "Light Intensity:":light,"Soil Moisture:":soil,"Humidity:":humid,"Temperature:":temp
             }
 
 @app.get("/post/{dname}", status_code = status.HTTP_200_OK)
